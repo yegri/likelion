@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+/*폰트*/
+@font-face {
+  font-family: choco;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: normal, choco, serif;
+}
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #0a0813;
+  color: #cecdcd;
+}
+
+/* .wrap::before,
+.wrap::after {
+  content: "";
+  display: table;
+}
+.wrap::after {
+  clear: both;
+} */
+
+/* 1200 이상 */
+@media screen and (min-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header-wrap {
+    width: 100%;
+    height: 1000px;
+    margin-top: 50px;
+  }
+  #header-wrap > h1 {
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    font: normal 30px choco, serif;
+  }
+  #jupiter {
+  }
+  #space {
+    width: 100%;
+  }
+  #main {
+    height: 300px;
+    margin-top: 50px;
+  }
+  #main > img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+  }
+  #main > h2 {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 45px;
+    text-align: left;
+    float: left;
+    margin-top: 100px;
+    font-weight: normal;
+  }
+  #main > h3 {
+    height: 60px;
+    line-height: 60px;
+    font-size: 43px;
+    text-align: left;
+    float: left;
+    font-weight: normal;
+  }
+  #menu {
+    height: 25px;
+    margin-top: 80px;
+    list-style: none;
+  }
+  #menu > li {
+    float: left;
+    width: 30%;
+    height: 45px;
+    line-height: 30px;
+    text-align: center;
+    font: normal 30px choco, serif;
+    border-left: 1px solid #cecece;
+  }
+  #menu > li:first-child {
+    margin-left: 20px;
+    border-left: none;
+  }
+  #menu > li:hover {
+    border-bottom: 3px solid #222222;
+  }
+  #menu > li > a {
+    color: #cecdcd;
+    text-decoration: none;
+  }
+
+  #middle-wrap {
+    width: 1140px;
+    height: 2550px;
+    margin: 80px auto 70px auto;
+    clear: both;
+  }
+
+  /* 자기소개 */
+  #info {
+    width: 1140px;
+    height: 750px;
+  }
+  /*박스 공통*/
+  .smallBox {
+    border-radius: 30%;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 10px 10px 30px 10px;
+    transition: all 1s;
+    border: 1px solid #cecece;
+  }
+  .smallBox:hover {
+    cursor: pointer;
+    border-radius: 40%;
+  }
+  .smallBox > span {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: underline;
+  }
+  .smallBox > p {
+    font-size: 18px;
+    text-align: center;
+    height: 180px;
+  }
+  .box1,
+  .box2 {
+    line-height: 2em;
+    padding-top: 20%;
+  }
+  .box3 {
+    line-height: 180px;
+  }
+  .box4 {
+    line-height: 1.5em;
+    padding-top: 10%;
+    font-size: 15px;
+  }
+
+  .bigBox > span {
+    display: block;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 40px;
+    text-decoration: underline;
+  }
+  .bigBox1,
+  .bigBox2 {
+    clear: both;
+    border-radius: 40px;
+    width: 1050px;
+    margin: 20px 0 20px 10px;
+    height: 200px;
+    border: 1px solid #cecece;
+    transition: all 1s;
+  }
+  .bigBox1:hover,
+  .bigBox2:hover {
+    border-radius: 70px;
+  }
+  .box5,
+  .box6 {
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 1.8em;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font: normal 25px choco, serif;
+    color: #f4900c;
+  }
+  .box_left {
+    float: left;
+    width: 20%;
+    height: 180px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 20px 10px 0 40px;
+  }
+  .box_right {
+    float: left;
+    width: 70%;
+    height: 180px;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 20px;
+  }
+
+  /* 학습계획 */
+  #plan {
+    width: 1140px;
+    height: 520px;
+  }
+  .planBox {
+    border: 1px solid #cecece;
+    border-radius: 40px;
+    width: 30%;
+    height: 400px;
+    float: left;
+    margin: 20px 10px 0 10px;
+    transition: all 1s;
+  }
+  .planBox:hover {
+    border-radius: 60px;
+    cursor: pointer;
+  }
+  .planBox > span {
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  .planList {
+    list-style: square;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 18px;
+  }
+  /* 프로젝트 */
+  .projectBox {
+    list-style: none;
+    margin-top: 20px;
+  }
+  .projectList {
+    border: 1px solid #cecdcd;
+    border-radius: 40px;
+    float: left;
+    width: 45%;
+    height: 530px;
+    margin: 0 20px 50px 20px;
+    line-height: 1.5em;
+  }
+  .projectList > span {
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  .projectList > p {
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+  #footer-wrap {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 50px;
+    clear: both;
+  }
+  #footer-wrap > h4 {
+    font: normal 20px choco, serif;
+    margin-bottom: 40px;
+  }
+  #footer-wrap > p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #contact {
+    width: 100%;
+    height: 80px;
+  }
+  #contact li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 15px;
+  }
+  #contact > li > span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  #contact > li > a {
+    color: #cecdcd;
+    text-decoration: none;
+  }
+}
+
+/* 768 ~ 1199 */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .row {
+    max-width: 1199px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .press_top {
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    margin-top: 50px;
+  }
+  .press_top > h2 {
+    font-size: 42px;
+    text-align: center;
+    color: #54410a;
+  }
+
+  #press_all {
+    width: 750px;
+    height: 480px;
+    margin: 30px auto 60px auto;
+  }
+
+  .press_s {
+    width: 750px;
+    height: 480px;
+  }
+
+  .press {
+    width: 750px;
+    height: 480px;
+  }
+  .press li {
+    width: 750px;
+    height: 213px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+  .press li:hover h3 {
+    text-decoration: underline;
+  }
+  .press li img {
+    float: left;
+    border-radius: 15px;
+    width: 320px;
+    height: 213px;
+  }
+
+  .press_txt {
+    float: right;
+    width: 400px;
+    height: 180px;
+    margin-top: 17px;
+  }
+  .press_txt > h3 {
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-bottom: 15px;
+  }
+  .press_txt > .press_txt1 {
+    font-size: 15px;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+  }
+  .press_txt > .press_txt2 {
+    font-size: 14px;
+    color: #999999;
+  }
+
+  .press_btn {
+    width: 200px;
+    margin: 20px auto;
+  }
+  .press_btn button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: #54410a;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+}
+
+/* 767 이하 */
+@media screen and (max-width: 767px) {
+  .row {
+    max-width: 767px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .press_top {
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    margin-top: 50px;
+  }
+  .press_top > h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #54410a;
+  }
+
+  #press_all {
+    width: 380px;
+    height: 690px;
+    margin: 10px auto 40px auto;
+  }
+
+  .press_s {
+    width: 380px;
+    height: 690px;
+  }
+
+  .press {
+    width: 380px;
+    height: 690px;
+  }
+  .press li {
+    width: 380px;
+    height: 345px;
+    cursor: pointer;
+  }
+  .press li:hover h3 {
+    text-decoration: underline;
+  }
+  .press li img {
+    border-radius: 15px;
+    width: 380px;
+    height: 253px;
+  }
+
+  .press_txt {
+    width: 380px;
+    height: 180px;
+    margin-top: 17px;
+  }
+  .press_txt > h3 {
+    font-size: 15px;
+    line-height: 1.7em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .press_txt > .press_txt1 {
+    display: none;
+  }
+  .press_txt > .press_txt2 {
+    display: none;
+  }
+
+  .press_btn {
+    width: 150px;
+    margin: 20px auto;
+  }
+  .press_btn button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #54410a;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+}
