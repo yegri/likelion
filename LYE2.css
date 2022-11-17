@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+/* 768 ~ 1199 */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrap {
+    max-width: 1199px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header-wrap {
+    width: 100%;
+    height: 750px;
+    margin-top: 50px;
+  }
+  #top {
+    width: 100%;
+    height: 40px;
+  }
+  #top #jupiter {
+    float: left;
+    margin-right: 10px;
+  }
+  #top > h1 {
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    font: normal 30px choco, serif;
+    float: left;
+  }
+
+  #space {
+    width: 100%;
+    height: 300px;
+  }
+  #main {
+    height: 220px;
+    margin-top: 50px;
+  }
+  #main > img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  #main > h2 {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: left;
+    float: left;
+    margin-top: 18px;
+    font-weight: normal;
+  }
+  #main > h3 {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 37px;
+    text-align: left;
+    float: left;
+    font-weight: normal;
+  }
+  #menu {
+    height: 45px;
+    margin-top: 40px;
+    list-style: none;
+  }
+  #menu > li {
+    float: left;
+    width: 30%;
+    height: 45px;
+    line-height: 30px;
+    text-align: center;
+    font: normal 25px choco, serif;
+    border-left: 1px solid #cecece;
+  }
+  #menu > li:first-child {
+    margin-left: 20px;
+    border-left: none;
+  }
+  #menu > li:hover {
+    border-bottom: 3px solid #cecece;
+  }
+  #menu > li > a {
+    display: block;
+    color: #cecdcd;
+    text-decoration: none;
+    width: 100%;
+    height: 45px;
+  }
+  #menu > li > a:hover {
+    color: #f4900c;
+  }
+
+  #middle-wrap {
+    width: 750px;
+    height: 2900px;
+    margin: 80px auto 70px auto;
+    clear: both;
+  }
+
+  /* 자기소개 */
+  #info {
+    width: 100%;
+    height: 1070px;
+  }
+  /*박스 공통*/
+  .smallBox {
+    border-radius: 50px;
+    width: 45%;
+    height: 250px;
+    float: left;
+    margin: 10px 10px 30px 10px;
+    transition: all 1s;
+    border: 1px solid #666666;
+  }
+  .smallBox:hover {
+    cursor: pointer;
+    border-radius: 70px;
+  }
+  .smallBox > span {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: underline;
+  }
+  .smallBox > p {
+    font-size: 20px;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+  }
+  .box1,
+  .box2 {
+    line-height: 2em;
+    padding-top: 15%;
+  }
+  .box3 {
+    line-height: 150px;
+  }
+  .box4 {
+    line-height: 1.5em;
+    padding-top: 4%;
+    font-size: 15px;
+  }
+
+  .bigBox > span {
+    display: block;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    text-decoration: underline;
+  }
+  .bigBox1,
+  .bigBox2 {
+    clear: both;
+    border-radius: 40px;
+    width: 98%;
+    margin: 20px 0 20px 10px;
+    height: 220px;
+    border: 1px solid #666666;
+    transition: all 1s;
+  }
+  .bigBox1:hover,
+  .bigBox2:hover {
+    border-radius: 70px;
+    cursor: pointer;
+  }
+  .box5,
+  .box6 {
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font: normal 25px choco, serif;
+    color: #f4900c;
+  }
+  .box_left {
+    float: left;
+    width: 20%;
+    height: 180px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 20px 10px 0 40px;
+  }
+  .box_right {
+    float: left;
+    width: 70%;
+    height: 180px;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 20px;
+  }
+
+  /* 학습계획 */
+  #plan {
+    width: 750px;
+    height: 500px;
+  }
+  .planBox {
+    border: 1px solid #666666;
+    border-radius: 40px;
+    width: 30%;
+    height: 400px;
+    float: left;
+    margin: 20px 10px 0 10px;
+    transition: all 1s;
+  }
+  .planBox:hover {
+    border-radius: 60px;
+    cursor: pointer;
+  }
+  .planBox > span {
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  .planList {
+    list-style: square;
+    padding-left: 18px;
+    line-height: 2em;
+    font-size: 14.5px;
+  }
+  /* 프로젝트 */
+  #project {
+    width: 750px;
+    height: 1200px;
+  }
+  .projectBox {
+    list-style: none;
+    margin-top: 30px;
+  }
+  .projectList {
+    border: 1px solid #666666;
+    border-radius: 40px;
+    float: left;
+    width: 44%;
+    height: 510px;
+    margin: 0 20px 50px 20px;
+    line-height: 1.5em;
+    transition: all 1s;
+  }
+  .projectList:hover {
+    border-radius: 60px;
+    cursor: pointer;
+  }
+  .projectList > span {
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  .projectList > p {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+  }
+  .projectList > p > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  #footer-wrap {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 50px;
+    clear: both;
+  }
+  #footer-wrap > h4 {
+    font: normal 20px choco, serif;
+    margin-bottom: 40px;
+  }
+  #footer-wrap > p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  #contact {
+    width: 100%;
+    height: 80px;
+  }
+  #contact li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+  }
+  #contact > li > span {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  #contact > li > a {
+    color: #cecdcd;
+    text-decoration: none;
+  }
+}

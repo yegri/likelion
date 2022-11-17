@@ -24,15 +24,6 @@ body {
   color: #cecdcd;
 }
 
-/* .wrap::before,
-.wrap::after {
-  content: "";
-  display: table;
-}
-.wrap::after {
-  clear: both;
-} */
-
 /* 1200 이상 */
 @media screen and (min-width: 1200px) {
   .wrap {
@@ -45,14 +36,22 @@ body {
     height: 1000px;
     margin-top: 50px;
   }
-  #header-wrap > h1 {
+  #top {
+    width: 100%;
+    height: 50px;
+  }
+  #top #jupiter {
+    float: left;
+    margin-right: 10px;
+  }
+  #top > h1 {
     height: 60px;
     line-height: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font: normal 30px choco, serif;
+    float: left;
   }
-  #jupiter {
-  }
+
   #space {
     width: 100%;
   }
@@ -102,13 +101,18 @@ body {
     border-left: none;
   }
   #menu > li:hover {
-    border-bottom: 3px solid #222222;
+    border-bottom: 3px solid #cecece;
   }
   #menu > li > a {
+    display: block;
     color: #cecdcd;
     text-decoration: none;
+    width: 100%;
+    height: 45px;
   }
-
+  #menu > li > a:hover {
+    color: #f4900c;
+  }
   #middle-wrap {
     width: 1140px;
     height: 2550px;
@@ -129,7 +133,7 @@ body {
     float: left;
     margin: 10px 10px 30px 10px;
     transition: all 1s;
-    border: 1px solid #cecece;
+    border: 1px solid #666666;
   }
   .smallBox:hover {
     cursor: pointer;
@@ -175,12 +179,13 @@ body {
     width: 1050px;
     margin: 20px 0 20px 10px;
     height: 200px;
-    border: 1px solid #cecece;
+    border: 1px solid #666666;
     transition: all 1s;
   }
   .bigBox1:hover,
   .bigBox2:hover {
     border-radius: 70px;
+    cursor: pointer;
   }
   .box5,
   .box6 {
@@ -221,7 +226,7 @@ body {
     height: 520px;
   }
   .planBox {
-    border: 1px solid #cecece;
+    border: 1px solid #666666;
     border-radius: 40px;
     width: 30%;
     height: 400px;
@@ -255,13 +260,18 @@ body {
     margin-top: 20px;
   }
   .projectList {
-    border: 1px solid #cecdcd;
+    border: 1px solid #666666;
     border-radius: 40px;
     float: left;
     width: 45%;
     height: 530px;
     margin: 0 20px 50px 20px;
     line-height: 1.5em;
+    transition: all 1s;
+  }
+  .projectList:hover {
+    border-radius: 60px;
+    cursor: pointer;
   }
   .projectList > span {
     display: block;
@@ -276,6 +286,9 @@ body {
   .projectList > p {
     text-align: center;
     margin: 10px 0 10px 0;
+  }
+  .projectList > p > img {
+    border-radius: 20px;
   }
   #footer-wrap {
     width: 100%;
@@ -312,179 +325,5 @@ body {
   #contact > li > a {
     color: #cecdcd;
     text-decoration: none;
-  }
-}
-
-/* 768 ~ 1199 */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .row {
-    max-width: 1199px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .press_top {
-    width: 100%;
-    height: 58px;
-    line-height: 58px;
-    margin-top: 50px;
-  }
-  .press_top > h2 {
-    font-size: 42px;
-    text-align: center;
-    color: #54410a;
-  }
-
-  #press_all {
-    width: 750px;
-    height: 480px;
-    margin: 30px auto 60px auto;
-  }
-
-  .press_s {
-    width: 750px;
-    height: 480px;
-  }
-
-  .press {
-    width: 750px;
-    height: 480px;
-  }
-  .press li {
-    width: 750px;
-    height: 213px;
-    margin-bottom: 50px;
-    cursor: pointer;
-  }
-  .press li:hover h3 {
-    text-decoration: underline;
-  }
-  .press li img {
-    float: left;
-    border-radius: 15px;
-    width: 320px;
-    height: 213px;
-  }
-
-  .press_txt {
-    float: right;
-    width: 400px;
-    height: 180px;
-    margin-top: 17px;
-  }
-  .press_txt > h3 {
-    font-size: 18px;
-    line-height: 1.7em;
-    margin-bottom: 15px;
-  }
-  .press_txt > .press_txt1 {
-    font-size: 15px;
-    line-height: 1.7em;
-    margin-bottom: 30px;
-  }
-  .press_txt > .press_txt2 {
-    font-size: 14px;
-    color: #999999;
-  }
-
-  .press_btn {
-    width: 200px;
-    margin: 20px auto;
-  }
-  .press_btn button {
-    width: 200px;
-    height: 60px;
-    border: none;
-    background-color: #54410a;
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 10px;
-  }
-}
-
-/* 767 이하 */
-@media screen and (max-width: 767px) {
-  .row {
-    max-width: 767px;
-    min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .press_top {
-    width: 100%;
-    height: 58px;
-    line-height: 58px;
-    margin-top: 50px;
-  }
-  .press_top > h2 {
-    font-size: 35px;
-    text-align: center;
-    color: #54410a;
-  }
-
-  #press_all {
-    width: 380px;
-    height: 690px;
-    margin: 10px auto 40px auto;
-  }
-
-  .press_s {
-    width: 380px;
-    height: 690px;
-  }
-
-  .press {
-    width: 380px;
-    height: 690px;
-  }
-  .press li {
-    width: 380px;
-    height: 345px;
-    cursor: pointer;
-  }
-  .press li:hover h3 {
-    text-decoration: underline;
-  }
-  .press li img {
-    border-radius: 15px;
-    width: 380px;
-    height: 253px;
-  }
-
-  .press_txt {
-    width: 380px;
-    height: 180px;
-    margin-top: 17px;
-  }
-  .press_txt > h3 {
-    font-size: 15px;
-    line-height: 1.7em;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  .press_txt > .press_txt1 {
-    display: none;
-  }
-  .press_txt > .press_txt2 {
-    display: none;
-  }
-
-  .press_btn {
-    width: 150px;
-    margin: 20px auto;
-  }
-  .press_btn button {
-    width: 150px;
-    height: 50px;
-    border: none;
-    background-color: #54410a;
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius: 10px;
   }
 }
